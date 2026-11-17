@@ -11,7 +11,7 @@ const app = express();
 const PORT = 3000;
 
 // Folder for uploaded PDF files
-const uploadFolder = path.join("/tmp", "uploads");
+const uploadFolder = path.join(__dirname, "uploads");
 
 // Create uploads folder if it does not exist
 if (!fs.existsSync(uploadFolder)) {
