@@ -35,7 +35,7 @@ app.get("/script.js", (req, res) => {
 });
 
 // MongoDB connection
-const client = new MongoClient(process.env.MONGO_URI);
+const client = new MongoClient(process.env.MONGODB_URI);
 
 async function startServer() {
     try {
