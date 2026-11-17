@@ -1,0 +1,130 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f2f4f7;
+    margin: 0;
+    padding: 30px 15px;
+}
+
+.container {
+    max-width: 500px;
+    margin: auto;
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px #ddd;
+}
+
+h2 {
+    text-align: center;
+    color: #174477;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 70px;
+}
+
+.gender {
+    display: flex;
+    gap: 20px;
+}
+
+.gender label {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.gender input {
+    width: auto;
+}
+
+.language-box {
+    position: relative;
+}
+
+.selected {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+    min-height: 40px;
+}
+
+.options {
+    display: none;
+    position: absolute;
+    background: white;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    z-index: 10;
+    max-height: 180px;
+    overflow-y: auto;
+}
+
+.options.show {
+    display: block;
+}
+
+.options label {
+    display: block;
+    padding: 8px;
+    cursor: pointer;
+}
+
+.options label:hover {
+    background: #f2f4f7;
+}
+
+.options input {
+    width: auto;
+}
+
+.tag {
+    display: inline-block;
+    background: #174477;
+    color: white;
+    padding: 5px 8px;
+    margin: 3px;
+    border-radius: 5px;
+}
+
+.tag span {
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+button {
+    background: #174477;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+button:hover {
+    background: #0d2e50;
+}
